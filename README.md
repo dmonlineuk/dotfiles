@@ -7,3 +7,9 @@ My dotfiles repo
 `stow bash`
 
 `stow hyprland`
+
+`stow tmux`
+
+`stow kitty`
+
+`stow wofi`

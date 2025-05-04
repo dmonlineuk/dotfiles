@@ -26,3 +26,9 @@ fi
 # oh-my-posh
 export PATH=$PATH:~/.local/bin/
 eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/jtracey93.omp.json)"
+
+
+# scanimage templates as aliases
+# needs redirect from stdout to file to work e.g. sppa4 > "this file.pdf"
+alias sa5='scanimage --format=pdf -x 148.5 -y 210'
+alias sa4='scanimage --format=pdf -x 210 -y 297'

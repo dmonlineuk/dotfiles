@@ -123,6 +123,7 @@ if ! shopt -oq posix; then
 fi
 
 alias kpd='kpcli --kdb=/home/dan/OneDrive/kpdb/Database.kdbx'
+alias pa='for FILE in *.pdf ; do lpr -P lexmarkprt "${FILE}" ; done'
 
 # can we start tmux?
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then

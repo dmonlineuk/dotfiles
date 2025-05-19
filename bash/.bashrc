@@ -140,4 +140,8 @@ fi
 alias sa5='scanimage --format=pdf -x 148.5 -y 210'
 alias sa4='scanimage --format=pdf -x 210 -y 297'
 
+# Simple prompt (use tmux status for all the fancy stuff)
 PS1="> "
+
+# Enable gpg in tty
+export GPG_TTY=$(tty)

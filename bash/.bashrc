@@ -15,7 +15,7 @@ alias la='eza -A'
 alias l='ls -CF'
 
 alias kpd='kpcli --kdb=/home/dan/OneDrive/kpdb/Database.kdbx'
-
+alias pa='for FILE in *.pdf ; do lpr -P lexmarkprt "${FILE}" ; done'
 
 
 # can we start tmux?

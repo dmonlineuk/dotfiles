@@ -15,8 +15,6 @@ alias la='eza -A'
 alias l='ls -CF'
 
 alias kpd='kpcli --kdb=/home/dan/OneDrive/kpdb/Database.kdbx'
-alias pa='for FILE in *.pdf ; do lpr -P lexmarkprt "${FILE}" ; done'
-
 
 # can we start tmux?
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
@@ -32,3 +30,8 @@ eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/jtracey93.omp.j
 # needs redirect from stdout to file to work e.g. sppa4 > "this file.pdf"
 alias sa5='scanimage --format=pdf -x 148.5 -y 210'
 alias sa4='scanimage --format=pdf -x 210 -y 297'
+
+# Printing Accounts
+alias pa='for FILE in *.pdf ; do lpr -P lexmarkprt "${FILE}" ; done'
+alias ppdf='lpr -P lexmarkprt'
+rpdf () { qpdf "$1" --rotate=90 --replace-input ; }

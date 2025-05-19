@@ -127,13 +127,14 @@ fi
 alias kpd='kpcli --kdb=/home/dan/OneDrive/kpdb/Database.kdbx'
 alias pa='for FILE in *.pdf ; do lpr -P lexmarkprt "${FILE}" ; done'
 
+export PATH=$PATH:~/.local/bin/
+
 # can we start tmux?
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
 
 # oh-my-posh
-#export PATH=$PATH:~/.local/bin/
 #eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/jtracey93.omp.json)"
 
 

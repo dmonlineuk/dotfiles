@@ -142,6 +142,8 @@ fi
 alias sa5='scanimage --format=pdf -x 148.5 -y 210'
 alias sa4='scanimage --format=pdf -x 210 -y 297'
 
+alias ppdf='lpr -P lexmarkprt'
+rpdf () { qpdf "$1" --rotate=90 --replace-input ; }
 # Simple prompt (use tmux status for all the fancy stuff)
 PS1="> "
 

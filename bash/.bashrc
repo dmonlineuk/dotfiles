@@ -150,3 +150,6 @@ PS1="> "
 
 # Enable gpg in tty
 export GPG_TTY=$(tty)
+
+# NW Scheduler
+alias nws="flatpak run --command=bottles-cli com.usebottles.bottles run -b NWS -p 'NW Scheduler' &"

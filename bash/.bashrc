@@ -8,6 +8,7 @@
 HISTCONTROL=ignoreboth
 
 export PATH=$PATH:~/.local/bin/
+export PATH=$PATH:~/go/bin
 export GPG_TTY=$(tty)
 
 alias ls='ls --color=auto'
@@ -23,4 +24,7 @@ fi
 if [ "$TERM_PROGRAM" = tmux ]; then
   PS1="> "
 fi
+
+# Intelligent history updates
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 

@@ -28,5 +28,5 @@ fi
 # Intelligent history updates
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-alias sa5='scanimage --format=pdf -x 148.5 -y 210'
-alias sa4='scanimage --format=pdf -x 210 -y 297'
+alias sa5='scanimage -d "airscan:w0:Lexmark International Lexmark CX310dn" --format=pdf -x 148.5 -y 210'
+alias sa4='scanimage -d "airscan:w0:Lexmark International Lexmark CX310dn" --format=pdf -x 210 -y 297'
